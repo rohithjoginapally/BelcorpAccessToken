@@ -5,7 +5,7 @@ import google.auth.transport.requests
 app = Flask(__name__)
 
 # Load credentials
-SERVICE_ACCOUNT_FILE = "tensile-courier-454917-t6-e1e6496ec6ba.json"
+SERVICE_ACCOUNT_FILE = "/etc/secrets/tensile-courier-454917-t6-e1e6496ec6ba.json"
 SCOPES = ["https://www.googleapis.com/auth/cloud-platform"]  # Modify scope as needed
 
 @app.route("/token", methods=["GET"])
